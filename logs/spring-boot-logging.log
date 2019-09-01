@@ -1,0 +1,343 @@
+2019/08/04-10:49 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 22085 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-10:49 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-10:49 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 22138 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-10:49 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-10:49 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-10:49 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-10:49 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-10:49 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-10:49 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2416 ms
+2019/08/04-10:49 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 22210 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-10:49 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-10:49 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-10:49 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-10:49 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-10:49 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-10:49 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1792 ms
+2019/08/04-10:49 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-10:49 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/08/04-10:49 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:49 [main] ERROR org.apache.catalina.util.LifecycleBase- Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.flowable.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019/08/04-10:49 [main] INFO  org.apache.catalina.core.StandardService- Stopping service [Tomcat]
+2019/08/04-10:49 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019/08/04-10:49 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019/08/04-10:49 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:49 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/08/04-10:49 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/08/04-10:50 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 24531 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-10:50 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-10:50 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-10:50 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-10:50 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-10:50 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-10:50 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1749 ms
+2019/08/04-10:50 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-10:50 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/08/04-10:50 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:50 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2019/08/04-10:50 [main] INFO  com.flowable.demo.DemoApplication- Started DemoApplication in 5.421 seconds (JVM running for 6.669)
+2019/08/04-10:51 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:51 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/08/04-10:51 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/08/04-10:51 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 27117 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-10:51 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-10:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-10:51 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-10:51 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-10:51 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-10:51 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1750 ms
+2019/08/04-10:51 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-10:51 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/08/04-10:51 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2019/08/04-10:51 [main] INFO  com.flowable.demo.DemoApplication- Started DemoApplication in 4.127 seconds (JVM running for 4.996)
+2019/08/04-10:52 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/08/04-10:52 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/08/04-10:52 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 19 ms
+2019/08/04-10:52 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:52 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/08/04-10:52 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/08/04-10:52 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 28581 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-10:52 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-10:52 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-10:52 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-10:52 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-10:52 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-10:52 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1649 ms
+2019/08/04-10:52 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-10:52 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/08/04-10:52 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:52 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2019/08/04-10:52 [main] INFO  com.flowable.demo.DemoApplication- Started DemoApplication in 4.064 seconds (JVM running for 5.129)
+2019/08/04-10:52 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/08/04-10:52 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/08/04-10:52 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 11 ms
+2019/08/04-10:52 [http-nio-8080-exec-2] INFO  com.flowable.demo.controller.IndexController- [index] 0
+2019/08/04-10:53 [http-nio-8080-exec-5] INFO  com.flowable.demo.controller.IndexController- [index] 0
+2019/08/04-10:53 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:53 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/08/04-10:53 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/08/04-10:53 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 29679 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-10:53 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-10:53 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-10:53 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-10:53 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-10:53 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-10:53 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1858 ms
+2019/08/04-10:53 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-10:53 [main] ERROR com.zaxxer.hikari.pool.HikariPool- HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Could not retrieve transaction read-only status from server
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:878)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:874)
+	at com.mysql.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:3552)
+	at com.mysql.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:3521)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:413)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:374)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:323)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:119)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.isEmbedded(DataSourceInitializer.java:136)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.isEnabled(DataSourceInitializer.java:128)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.createSchema(DataSourceInitializer.java:95)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:62)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1119)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:411)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:344)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:337)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerPostProcessor.postProcessAfterInitialization(DataSourceInitializerPostProcessor.java:53)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.flowable.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 5,007 milliseconds ago.  The last packet sent successfully to the server was 5,005 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3559)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3459)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3900)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2480)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2438)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1381)
+	at com.mysql.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:3546)
+	... 84 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3008)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3469)
+	... 92 common frames omitted
+2019/08/04-10:53 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:53 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2019/08/04-10:53 [main] INFO  com.flowable.demo.DemoApplication- Started DemoApplication in 39.787 seconds (JVM running for 40.792)
+2019/08/04-10:54 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/08/04-10:54 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/08/04-10:54 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 40 ms
+2019/08/04-10:54 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-10:54 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/08/04-10:54 [http-nio-8080-exec-1] INFO  com.flowable.demo.controller.IndexController- [index] 0
+2019/08/04-10:54 [http-nio-8080-exec-2] INFO  com.flowable.demo.controller.IndexController- [index] 0
+2019/08/04-10:54 [http-nio-8080-exec-7] INFO  com.flowable.demo.controller.IndexController- [index] 0
+2019/08/04-10:54 [http-nio-8080-exec-6] INFO  com.flowable.demo.controller.IndexController- [index] 0
+2019/08/04-10:57 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:57 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/08/04-10:57 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/08/04-10:57 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 4729 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-10:57 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-10:57 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-10:57 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-10:57 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-10:57 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-10:57 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2281 ms
+2019/08/04-10:57 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-10:57 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/08/04-10:57 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/08/04-10:57 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2019/08/04-10:57 [main] INFO  com.flowable.demo.DemoApplication- Started DemoApplication in 7.895 seconds (JVM running for 9.193)
+2019/08/04-10:58 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/08/04-10:58 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/08/04-10:58 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 18 ms
+2019/08/04-10:58 [http-nio-8080-exec-1] INFO  com.flowable.demo.controller.IndexController- [index] 7953
+2019/08/04-11:00 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/08/04-11:00 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/08/04-11:00 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/08/04-11:00 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 9630 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-11:00 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-11:00 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-11:00 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-11:00 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-11:00 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-11:00 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2402 ms
+2019/08/04-11:00 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-11:00 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/08/04-11:00 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/08/04-11:00 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2019/08/04-11:00 [main] INFO  com.flowable.demo.DemoApplication- Started DemoApplication in 4.937 seconds (JVM running for 5.876)
+2019/08/04-11:01 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/08/04-11:01 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/08/04-11:01 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/08/04-11:01 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 12034 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-11:01 [main] DEBUG com.flowable.demo.DemoApplication- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019/08/04-11:01 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-11:01 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-11:01 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-11:01 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-11:01 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-11:01 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2084 ms
+2019/08/04-11:01 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-11:01 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/08/04-11:01 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/08/04-11:01 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2019/08/04-11:01 [main] INFO  com.flowable.demo.DemoApplication- Started DemoApplication in 4.756 seconds (JVM running for 5.567)
+2019/08/04-11:01 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/08/04-11:01 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/08/04-11:01 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 14 ms
+2019/08/04-11:01 [http-nio-8080-exec-1] INFO  com.flowable.demo.controller.IndexController- [index] 7953
+2019/08/04-11:01 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/08/04-11:01 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/08/04-11:01 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
+2019/08/04-11:01 [main] INFO  com.flowable.demo.DemoApplication- Starting DemoApplication on qingshanli with PID 12895 (/media/qingshanli/E/src/demo/target/classes started by qingshanli in /media/qingshanli/E/src/demo)
+2019/08/04-11:01 [main] DEBUG com.flowable.demo.DemoApplication- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019/08/04-11:01 [main] INFO  com.flowable.demo.DemoApplication- No active profile set, falling back to default profiles: default
+2019/08/04-11:01 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2019/08/04-11:01 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/08/04-11:01 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/08/04-11:01 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/08/04-11:01 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1807 ms
+2019/08/04-11:01 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2019/08/04-11:01 [main] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2019/08/04-11:01 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2019/08/04-11:01 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2019/08/04-11:01 [main] INFO  com.flowable.demo.DemoApplication- Started DemoApplication in 4.32 seconds (JVM running for 5.128)
+2019/08/04-11:01 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/08/04-11:01 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2019/08/04-11:01 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 11 ms
+2019/08/04-11:01 [http-nio-8080-exec-1] INFO  com.flowable.demo.controller.IndexController- [index] 7953
+2019/08/04-11:01 [Thread-3] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'
+2019/08/04-11:01 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown initiated...
+2019/08/04-11:01 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Shutdown completed.
