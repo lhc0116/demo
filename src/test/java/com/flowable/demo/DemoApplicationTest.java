@@ -104,7 +104,7 @@ public class DemoApplicationTest {
     @Test
     public void insert() {
         String sql = "insert into pass_user (name,age,gender,birthday,create_time,update_time) values (?,?,?,?,?,?)";
-        jdbcTemplate.update(sql, "张三丰", 18, "male", Instant.now().toEpochMilli(), Instant.now().toEpochMilli(), Instant.now().toEpochMilli());
+        jdbcTemplate.update(sql, "\uD854\uDE8D", 18, "male", Instant.now().toEpochMilli(), Instant.now().toEpochMilli(), Instant.now().toEpochMilli());
     }
 
     @Test
@@ -119,7 +119,7 @@ public class DemoApplicationTest {
         String sql = "insert into pass_user (name,age,gender,birthday,create_time,update_time) values (?,?,?,?,?,?)";
         List<Object[]> args = new ArrayList<>();
         for (int i = 0; i < 10000; i++) {
-            args.add(new Object[]{"西门吹雪" + i, 18 + i & 3, i % 2 == 0 ? "female" : "male", Instant.now().toEpochMilli(), Instant.now().toEpochMilli(), Instant.now().toEpochMilli()});
+            args.add(new Object[]{"陆小凤" + i, 18 + i & 3, i % 2 == 0 ? "female" : "male", Instant.now().toEpochMilli(), Instant.now().toEpochMilli(), Instant.now().toEpochMilli()});
         }
         jdbcTemplate.batchUpdate(sql, args);
         stopWatch.split();
