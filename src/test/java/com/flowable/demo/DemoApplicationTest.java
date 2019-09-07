@@ -16,6 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
@@ -103,8 +104,8 @@ public class DemoApplicationTest {
 
     @Test
     public void insert() {
-        String sql = "insert into pass_user (name,age,gender,birthday,create_time,update_time) values (?,?,?,?,?,?)";
-        jdbcTemplate.update(sql, "\uD83D\uDE0D", 18, "male", Instant.now().toEpochMilli(), Instant.now().toEpochMilli(), Instant.now().toEpochMilli());
+        String sql = "insert into pass_user (name,age,gender,birthday,create_time,update_time) values (?,?,?,?,NULL,NULL)";
+        jdbcTemplate.update(sql, "\uD83D\uDE0D", 18, "male", new Date());
     }
 
     @Test
