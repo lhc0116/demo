@@ -47,7 +47,7 @@ public class IndexController {
 
     @PatchMapping("/event")
     public ResponseEntity<HttpStatus> event() {
-        LOGGER.info("[" + Thread.currentThread().getStackTrace()[1].getMethodName() + "] 发布事件");
+        LOGGER.info("[" + Thread.currentThread().getStackTrace()[1].getMethodName() + "] 开始发布事件");
         applicationContext.publishEvent(new HelloEvent(this, "陆小凤"));
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
